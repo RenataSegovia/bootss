@@ -1,0 +1,36 @@
+header .fondo-nav {
+  color: #bc548d;
+  background-image: url(../Imagenes/fondo.jpg); }
+
+h1, h2 {
+  color: cornflowerblue; }
+
+.green {
+  background-color: green; }
+
+.salmon {
+  background-color: salmon; }
+
+.paletas {
+  background-color: #eec2c2;
+  text-align: center; }
+  .paletas h2 {
+    color: #33c4c5; }
+  .paletas p {
+    color: #bc548d; }
+
+.brochas {
+  background-color: #eec2c2;
+  text-align: center; }
+  .brochas h2 {
+    color: #33c4c5; }
+  .brochas p {
+    color: #bc548d; }
+
+.bases {
+  background-color: #eec2c2;
+  text-align: center; }
+  .bases h2 {
+    color: #33c4c5; }
+  .bases p {
+    color: #bc548d; }

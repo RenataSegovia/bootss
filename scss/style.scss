@@ -1,0 +1,61 @@
+$letragrande:#bc548d;
+
+header{
+     .fondo-nav{
+          color: #bc548d;
+          background-image: url(../Imagenes/fondo.jpg);
+     }
+}
+$skincare:invierno;
+
+h1,h2{
+     @if $skincare == verano {
+          color:aquamarine;
+     }
+     @else if $skincare == invierno {
+          color: cornflowerblue;
+     }
+     @else if $skincare == primavera {
+          color: palegreen;
+
+     }
+}
+@each $color in green, salmon{
+     .#{$color}{
+          background-color: $color;
+     }
+
+}
+$bgcaja1:#eec2c2;
+$bgcaja2:#eec2c2;
+$bgcaja3:#eec2c2;
+$pink:#33c4c5;
+$text:#bc548d;
+
+@mixin cajas ($bgcaja){
+     background-color: $bgcaja;
+    text-align: center;
+     h2{
+          color:$pink;
+     }
+     p{
+          color:$text;
+     }
+}
+.paletas{
+     @include cajas ($bgcaja1)
+    
+}
+.brochas{
+     @include cajas ($bgcaja2)
+    
+}
+.bases{
+     @include cajas ($bgcaja3)
+}
+.correoarg{
+     display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
